@@ -29,8 +29,9 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'pry-rails'
-
+  gem 'capybara', '~>2.5'
   gem 'rspec-rails', '~>3.0'
+  gem 'faker', '~> 1.4'
   gem 'factory_girl_rails', '~>4.0'
 end
 
