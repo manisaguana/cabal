@@ -1,0 +1,24 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: image-url('main_background.jpeg');
+  background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+}
+
+nav {
+ color: whitesmoke;
+}
+
+nav h1 {
+  display: inline;
+  font-size: 2.3em;
+  margin-left: .3em;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
