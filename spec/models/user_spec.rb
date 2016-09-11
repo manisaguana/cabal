@@ -52,8 +52,24 @@ describe User, type: :model do
     expect(user).to_not be_valid
   end
 
-  it "is invalid without password" do
-    user = build(:user, password_digest: nil)
+  it "is invalid if password and/or confirmation are not present" do
+    missing_pass    = build(:user, password: " "*8, password_confirmation: "blarpblarp")
+    missing_confirm = build(:user, password: "blarpblarp", password_confirmation: " "*8)
+
+    expect(missing_pass).to_not be_valid
+    expect(missing_confirm).to_not be_valid
+  end
+
+  it "is invalid without matching password confirmation" do
+    valid_confirmation   = build(:user, password: "blarpblarp", password_confirmation: "blarpblarp")
+    invalid_confirmation = build(:user, password: "blarpblarp", password_confirmation: "cheeseybread")
+
+    expect(valid_confirmation).to be_valid
+    expect(invalid_confirmation).to_not be_valid
+  end
+
+  it "is invalid if password is too short" do
+    user = build(:user, password: "blarp")
 
     expect(user).to_not be_valid
   end
