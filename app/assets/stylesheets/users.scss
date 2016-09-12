@@ -1,19 +1,26 @@
 h1 {
   color: #202036;
-  text-align: left;
-  margin-left: .3em;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  color: #b20000;
+  padding-left: 0;
 }
 
 .new_user_form {
-  text-align: center;
   margin: auto;
   margin-top: 5%;
   padding: 2%;
-  max-width: 15%;
+  max-width: 45%;
+  text-align: center;
 }
 
 .new_user_form input {
-  margin-bottom: 1em;
+  margin: auto;
+  margin-top: 1em;
+  display: block;
 }
 
 input[type=submit] {
