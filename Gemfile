@@ -31,6 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   gem 'pry-rails'
   gem 'capybara', '~>2.5'
+  gem "chromedriver-helper"
+  gem "selenium-webdriver"
   gem 'rspec-rails', '~>3.0'
   gem 'database_cleaner'
   gem 'faker', '~> 1.4'

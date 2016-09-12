@@ -1,4 +1,5 @@
 require 'capybara/rspec'
+require 'support/capybara'
 require 'factory_girl_rails'
 require 'support/factory_girl'
 require 'database_cleaner'
