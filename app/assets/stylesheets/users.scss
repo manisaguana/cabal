@@ -1,0 +1,27 @@
+h1 {
+  color: #202036;
+  text-align: left;
+  margin-left: .3em;
+}
+
+.new_user_form {
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  padding: 2%;
+  max-width: 15%;
+}
+
+.new_user_form input {
+  margin-bottom: 1em;
+}
+
+input[type=submit] {
+  color: whitesmoke;
+  background: none;
+  background-color: #202036;
+  padding: .4em 1em .4em 1em;
+  border-radius: 25px;
+  border: none;
+}
+
