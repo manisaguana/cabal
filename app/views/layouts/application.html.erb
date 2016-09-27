@@ -11,6 +11,10 @@
   <body>
     <nav>
       <h1><%=  link_to("Cabal", "/") %></h1>
+
+      <% if logged_in? %>
+        <div class="username"><%= @current_user.username %></div>
+      <% end %>
     </nav>
 
     <%= yield %>
