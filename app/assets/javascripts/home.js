@@ -1,2 +1,15 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).ready(function() {
+  logout();
+});
+
+function logout() {
+  $(".username").mouseenter(function() {
+    $(this).hide();
+    $(".logout").css("display", "inline");
+  })
+
+  $(".logout").mouseleave(function() {
+    $(".username").show();
+    $(this).css("display", "none");
+  })
+}
