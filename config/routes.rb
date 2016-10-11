@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'rooms/show'
+
   get 'sessions/new'
 
   root 'home#index'
