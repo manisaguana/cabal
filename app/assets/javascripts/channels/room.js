@@ -8,7 +8,8 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
   },
 
   received: function(data) {
-    $('#messages').append(data['message']);
+    $('.chat-box').append(data['message']);
+    $('.chat-box').scrollTop(1000000);
   },
 
   speak: function(message) {
