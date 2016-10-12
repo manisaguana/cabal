@@ -1,5 +1,5 @@
 .chat-box {
-  background-color: rgba(220,220,220,0.7);
+  background-color: rgba(220,220,220,0.9);
   padding: .5em;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -10,7 +10,7 @@
 }
 
 .input-box {
-  background-color: rgba(220,220,220,0.7);
+  background-color: rgba(220,220,220,0.9);
   padding: .5em;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -22,3 +22,26 @@
   width: 100%;
 }
 
+.message_username {
+  color: #ff3125;
+  font-weight: bold;
+  float: left;
+  clear: both;
+}
+
+.message_timestamp {
+  font-size: .7em;
+  margin-bottom: 1em;
+  color: #494949;
+}
+
+.message_content {
+  max-width: 94.5%;
+  width: 94.5%;
+  float: right;
+  padding-bottom: 1em;
+}
+
+#messages {
+  max-width: 96%;
+}
