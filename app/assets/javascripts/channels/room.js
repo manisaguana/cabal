@@ -1,10 +1,10 @@
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
-    // Called when the subscription is ready for use on the server
+    console.log("This is from the javascript connection This is from the javascript connection This is from the javascript connection");
   },
 
   disconnected: function() {
-    // Called when the subscription has been terminated by the server
+    console.log("This is from the javascript disconnection This is from the javascript disconnection This is from the javascript disconnection");
   },
 
   received: function(data) {
