@@ -6,7 +6,14 @@
 
 
   <div class="online_users_list">
-    <%= render "sidebar/online_user" %>
+
+    <% @users.each do |user| %>
+      <% next if user == current_user %>
+      <div class="online_user">
+        <%= user.username.capitalize %>
+      </div>
+    <% end %>
+   
   </div>
 
 </div>

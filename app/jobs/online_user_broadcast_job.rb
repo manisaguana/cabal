@@ -8,16 +8,6 @@ class OnlineUserBroadcastJob < ApplicationJob
   private
     
     def render_user(user)
-      puts user.username
-      puts user.username
-      puts user.username
-      puts user.username
-      puts user.username
-      puts user.username
-      puts user.username
-      puts user.username
-      puts user.username
       ApplicationController.renderer.render(partial: 'sidebar/online_user', locals: { user: user })
     end
-
 end

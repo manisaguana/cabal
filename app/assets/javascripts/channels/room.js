@@ -1,15 +1,14 @@
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
-    console.log("This is from the javascript connection This is from the javascript connection This is from the javascript connection");
   },
 
   disconnected: function() {
-    console.log("This is from the javascript disconnection This is from the javascript disconnection This is from the javascript disconnection");
   },
 
   received: function(data) {
     $('.chat-box').append(data['message']);
     $('.chat-box').scrollTop(1000000);
+    $('.online_users_list').append(data['user']);
   },
 
   speak: function(message) {
