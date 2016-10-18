@@ -9,7 +9,7 @@
 
     <% @users.each do |user| %>
       <% next if user == current_user %>
-      <div class="online_user">
+      <div class="online_user" id="<%= user.id %>">
         <%= user.username.capitalize %>
       </div>
     <% end %>

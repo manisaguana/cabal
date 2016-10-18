@@ -9,6 +9,9 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
     $('.chat-box').append(data['message']);
     $('.chat-box').scrollTop(1000000);
     $('.online_users_list').append(data['user']);
+
+    var user = $('#' + data['user_id']);
+    user.next().next().remove();
   },
 
   speak: function(message) {
