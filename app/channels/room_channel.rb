@@ -9,6 +9,7 @@ class RoomChannel < ApplicationCable::Channel
 
   def unsubscribed
     current_user.update_attribute :is_online, false 
+    ActionCable.server.broadcast 'room_channel', offline_user: current_user.id
   end
 
   def speak(data)

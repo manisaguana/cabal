@@ -12,6 +12,10 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
 
     var user = $('#' + data['user_id']);
     user.next().next().remove();
+
+    var offlineUser = $('#' + data['offline_user']);
+    offlineUser.remove();
+
   },
 
   speak: function(message) {
