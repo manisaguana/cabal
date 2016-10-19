@@ -1,15 +1,21 @@
 App.room = App.cable.subscriptions.create("RoomChannel", {
   connected: function() {
-    // Called when the subscription is ready for use on the server
   },
 
   disconnected: function() {
-    // Called when the subscription has been terminated by the server
   },
 
   received: function(data) {
     $('.chat-box').append(data['message']);
     $('.chat-box').scrollTop(1000000);
+    $('.online_users_list').append(data['user']);
+
+    var user = $('#' + data['user_id']);
+    user.next().next().remove();
+
+    var offlineUser = $('#' + data['offline_user']);
+    offlineUser.remove();
+
   },
 
   speak: function(message) {
