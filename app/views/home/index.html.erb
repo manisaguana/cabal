@@ -1,0 +1,45 @@
+<div class="middle">
+  <% if logged_in? %>
+    <div class="button" id="chat"><%= link_to("Ready to Chat!", rooms_show_path) %></div>
+  <% else %>
+    <div class="button" id="login"><%= link_to("Log In", login_path) %></div>
+    <div class="button" id="signup"><%= link_to("Sign Up", signup_path) %></div>
+  <% end %>
+</div>
+
+<div class="hidden_login_form">
+  <%= render partial: "shared/login_form" %>
+</div>
+
+<div class="hidden_signup_form">
+  <%= render partial: "shared/new_user_form" %>
+</div>
+
+<div class="about">
+  <h2>Welcome to Cabal</h2>
+
+  <div class="about_text">
+    <p>Cabal is a simple chat application I made to learn how to use ActionCable. Though I could have used Bootstrap or Devise, <br>I chose not to in the begining as a personal challenge.</p>
+
+    <p>It is currently in the MVP stage with release dates of additional features listed below.</p>
+
+    <div class="schedule">
+      <h2>Feature Schedule</h2>
+
+      <div class="list">
+        <ol>
+          <li><h4>Test Current Codebase - 10/21/2016</h4></li>
+          <li><h4>Fix Cross Browser Issues - 10/22/2016</h4></li>
+          <li><h4>Implement Devise - 10/23/2016</h4></li>
+          <li><h4>Individual Chat Rooms - 10/25/2016</h4></li>
+          <li><h4>Direct Messages - 10/27/2016</h4></li>
+          <li><h4>More Testing - 10/29/2016</h4></li>
+          <li><h4>Bug Fixes - 10/31/2016</h4></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>Cabal 2016</footer>

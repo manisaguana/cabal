@@ -1,0 +1,12 @@
+<%= render "sidebar/sidebar" %>
+
+<div class="chat-box">
+  <%= render @messages %>
+</div>
+
+<div class="input-box">
+  <form>
+    <input type="text" data-behavior="room_speaker" autofocus>
+    <input class="send" type="submit" value="Send">
+  </form>
+</div>

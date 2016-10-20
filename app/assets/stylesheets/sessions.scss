@@ -1,0 +1,36 @@
+h1 {
+  color: #202036;
+  margin: auto;
+}
+
+.login_form {
+  background-color: rgba(220,220,220,0.7);
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 1%;
+  padding: 2%;
+  max-width: 20%;
+  text-align: center;
+}
+
+.login_form input {
+  margin: auto;
+  margin-top: 1em;
+  display: block;
+}
+
+input[type=submit] {
+  color: whitesmoke;
+  background: none;
+  background-color: #202036;
+  padding: .4em 1em .4em 1em;
+  border-radius: 25px;
+  border: none;
+}
+
+.login_error {
+  list-style-type: none;
+  color: #b20000;
+  padding-left: 0;
+  margin-top: 1em;
+}

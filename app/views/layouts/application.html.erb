@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <nav>
+      <h1><%=  link_to("Cabal", "/") %></h1>
+
+      <% if logged_in? %>
+        <div class="username"><%= @current_user.username.capitalize %></div>
+        <div class="logout"><%= link_to 'Log out?', logout_path, method: 'delete' %></div>
+      <% end %>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
