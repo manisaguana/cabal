@@ -37,7 +37,8 @@ $(document).on('keypress', '[data-behavior~=room_speaker]', function(event) {
 $(document).on('click', '[data-behavior~=send_message]', function(event) {
   var message = $('[data-behavior~=room_speaker]').val(); 
   App.room.speak(message);
-  $('[data-behavior~=room_speaker]').val('')
+  $('[data-behavior~=room_speaker]').val('');
+  $('[data-behavior~=room_speaker]').focus();
   event.preventDefault();
 });
 
