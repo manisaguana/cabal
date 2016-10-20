@@ -3,17 +3,19 @@ h1 {
   margin: auto;
 }
 
-ul {
+.errors ul {
   list-style-type: none;
   color: #b20000;
   padding-left: 0;
 }
 
 .new_user_form {
+  background-color: rgba(220,220,220,0.7);
+  border-radius: 12px; 
   margin: auto;
-  margin-top: 5%;
+  margin-top: 1%;
   padding: 2%;
-  max-width: 45%;
+  max-width: 20%;
   text-align: center;
 }
 

@@ -1,13 +1,2 @@
-<div class="login_form">
-  <h1>Log In</h1>
+<%= render partial: "shared/login_form" %>
 
-  <% flash.each do |key, value| %>
-    <div class="<%= key %>"><%= value %></div>
-  <% end %>
-
-  <%=  form_for(:session, url: login_path) do |f| %>
-    <%=  f.text_field :email, placeholder: "Email", autofocus: true %>
-    <%=  f.password_field :password, placeholder: "Password" %>
-    <%=  f.submit "Submit" %>
-  <%  end %>
-</div>
