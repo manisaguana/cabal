@@ -6,6 +6,7 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= action_cable_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <h1><%=  link_to("Cabal", "/") %></h1>
 
       <% if logged_in? %>
-        <div class="username"><%= @current_user.username.capitalize %></div>
+        <div class="username"><%= @current_user.username %></div>
         <div class="logout"><%= link_to 'Log out?', logout_path, method: 'delete' %></div>
       <% end %>
     </nav>

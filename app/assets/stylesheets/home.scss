@@ -46,7 +46,7 @@ nav .logout {
   margin: auto;
   margin-top: 8%;
   padding: 2%;
-  max-width: 20%;
+  max-width: 35%;
   text-align: center;
 }
 
@@ -107,3 +107,27 @@ footer {
   margin-left: -.5em;
 }
 
+// Media Queries
+
+@media screen and (max-width: 690px) {
+
+.middle .button {
+  display: block; 
+  margin: auto;
+  max-width: 45%;
+  margin-top: 2%;
+}
+
+.schedule .list {
+  width: 60%;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+.middle .button {
+  max-width: 75%;
+}
+
+}
