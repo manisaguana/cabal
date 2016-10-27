@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "The sign up procces", type: :feature do
   
-  it "creates a new user", js: true do
+  it "creates a new user" do
     visit "/signup" 
 
     fill_in "Username",         with: "username"
