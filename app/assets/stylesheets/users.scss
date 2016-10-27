@@ -34,3 +34,36 @@ input[type=submit] {
   border: none;
 }
 
+// Media Queries 
+
+@media screen and (max-width: 900px) {
+
+.new_user_form {
+  max-width: 30%;
+}
+
+}
+
+@media screen and (max-width: 690px) {
+
+.new_user_form {
+  max-width: 40%;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.new_user_form {
+  max-width: 60%;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+.new_user_form {
+  max-width: 85%;
+}
+
+}
