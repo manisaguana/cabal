@@ -2,6 +2,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   before_save { email.downcase! }
+  before_save { username.capitalize! }
 
   validates :password,        presence: true, length: { minimum: 8 }
   validates :username,        presence: true, length: { maximum: 20 }, uniqueness: true

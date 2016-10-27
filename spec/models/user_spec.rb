@@ -15,6 +15,7 @@ describe User, type: :model do
   it "is invalid if username is not unique" do 
     user1 = create(:user, username: "blarp")
     user2 = build(:user, username: "blarp")
+    user2.username.capitalize!
 
     expect(user1).to be_valid
     expect(user2).to_not be_valid
